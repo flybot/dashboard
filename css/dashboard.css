@@ -1,0 +1,215 @@
+#showMore {
+	color: #365EBF;
+	font-family: "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial",
+		sans-serif;
+	font-weight: 400;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+	font-family: "HelveticaNeue-Light";
+	src: url("../css/HelveticaNeueLTW1G-Lt.woff") format("woff");
+}
+
+@font-face {
+	font-family: "DINNextLTPro-Regular";
+	src: url("../css/DINNextLTPro-Regular.woff") format("woff");
+}
+
+.container {
+	max-width: 1000px;
+	max-height: 475px;
+	padding-top: 36px;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.infoText1 {
+	color: #486C8F;
+	font-family: "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.infoText2 {
+	margin-top: -3px;
+	color: #486C8F;
+	font-family: "HelveticaNeue-Light", "HelveticaNeue",
+		"HelveticaNeueLight", "Helvetica Neue Light", "Helvetica Neue",
+		"Helvetica", "Arial", sans-serif;
+	font-size: 12px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+#mainSpending {
+	font-size: 190%;
+}
+
+.bigNumberWrapper {
+	margin-bottom: 5px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-weight: 400;
+}
+
+#mainProfit {
+	font-size: 190%;
+}
+
+.colorSwatch {
+	border-radius: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	height: 16px;
+	width: 16px;
+	margin-top: 2px;
+}
+
+.itemListText {
+	color: #516D88;
+	padding-left: 10px;
+	font-weight: 400;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.itemListText:hover {
+	color: #337CBB;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#incomeBarWrapper {
+	padding-bottom: 2px;
+	padding-left: 0;
+}
+
+#incomeBar {
+	background-color: #ABCC00;
+	padding-bottom: 3.4em;
+	margin-bottom: 1px;
+	float: left;
+	margin-right: 1%;
+}
+
+.barCharLegend {
+	float: left;
+	margin-left: 2.2%;
+	margin-top: 3px;
+}
+
+#spendingBar {
+	background-color: #0098CD;
+	padding-top: 3.4em;
+	float: left;
+	margin-right: 1%;
+}
+
+#spendingBarWrapper {
+	padding-left: 0;
+}
+
+#doughnut {
+	display: block;
+	float: left;
+	width: 150px;
+	height: 150px;
+}
+
+#tableLegend {
+	margin: 0 auto;
+	display: block;
+	padding-right: 0;
+}
+
+#tableLocation {
+	margin: 0 auto;
+}
+
+.row {
+	padding-bottom: 1%;
+}
+
+.totalText {
+	margin-bottom: 1em;
+	font-family: "DINNextLTPro-Regular", "Arial", sans-serif;
+	font-weight: 400;
+	line-height: 1;
+	color: #404040;
+}
+
+.barChartRow {
+	padding-bottom: 1px;
+}
+
+.listRow {
+	margin-bottom: 5px;
+}
+
+.itemMoney {
+	color: #516D88;
+	font-family: "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-align: right;
+}
+
+.income {
+	font-family: "DINNextLTPro-Regular", "Arial", sans-serif;
+	font-size: 130%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.spending {
+	font-family: "DINNextLTPro-Regular", "Arial", sans-serif;
+	font-size: 130%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Small devices (tablets, 768px and down) */
+@media ( max-width : 768px) {
+	.listRow {
+		padding-left: 10%;
+	}
+	#barChart {
+		padding-left: 7%;
+	}
+	.totalText {
+		padding-left: 10%;
+	}
+}
+
+@media ( max-width : 560px) {
+	.barCharLegend {
+		float: left;
+		margin-left: 5%;
+	}
+}
+
+#powerTip {
+	background-color: rgb(51, 51, 51);
+	border-color: transparent;
+	border-radius: 3px;
+	padding: 15px;
+	box-shadow: none;
+}
+
+.tooltip-amount {
+	color: rgb(253, 253, 253);
+	font-family: "DINNextLTPro-Regular", "Arial", sans-serif;
+	font-weight: 400;
+	font-size: 130%;
+}
+
+.tooltip-label {
+	font-family: "DINNextLTPro-Regular", "Arial", sans-serif;
+	font-size: 90%;
+	color: #788BA9;
+}
