@@ -80,19 +80,16 @@ $dash = new Dashboard();
 $user = $dash->getUserId();
 $rows = $dash->getProfitReport($user);
 
-/*$rows = [
-		(object)['headline_level'=>5, 'account'=>1099, 'name'=>"Omsætning i alt", 'amount'=>-222718.00],
-		(object)['headline_level'=>5, 'account'=>1399, 'name'=>"Direkte omkostninger i alt", 'amount'=>123311.91],
-		(object)['headline_level'=>5, 'account'=>2299, 'name'=>"Lønninger i alt", 'amount'=>1644.85],
-		(object)['headline_level'=>5, 'account'=>2899, 'name'=>"Salgs- og rejseomkostninger i alt", 'amount'=>17693.76],
-		(object)['headline_level'=>5, 'account'=>3199, 'name'=>"Autodrift - personbiler i alt", 'amount'=>2384.20],
-		(object)['headline_level'=>5, 'account'=>3799, 'name'=>"Administrationsomkostninger i alt", 'amount'=>32064.66],
-		(object)['headline_level'=>5, 'account'=>4499, 'name'=>"Renteudgifter i alt", 'amount'=>5142.16],
-];*/
-
 //prepare view data
-$dash->set( 'income', -$rows[0]->amount );
-$dash->set( 'income_name', $rows[0]->name );
+if($row[0]->account < 1100) {
+	$dash->set( 'income', -$rows[0]->amount );
+	$dash->set( 'income_name', $rows[0]->name );
+}
+else {
+	$dash->set( 'income', 0 );
+	$dash->set( 'income_name', 'Row not found' );
+}
+
 
 unset($rows[0]);
 $spending = [];
@@ -101,5 +98,4 @@ foreach ( $rows as $row )
 		$spending[] = [ 'name'=>$row->name, 'value'=>$row->amount ];	
 $dash->set('spending', json_encode(array_values($spending)));
 
-//$this->set();
 echo $dash->output('main.tpl');
