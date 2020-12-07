@@ -4,9 +4,9 @@ require  'medoo.php';
  * Database parameters 
  */
 const DB_NAME 		= "dama86dd4g3vj6";
-const DB_SERVER 	= "production-db.cas2tln5cone.us-east-1.rds.amazonaws.com";
-const DB_USER 		= "xunlight";
-const DB_PASSWORD 	= "benjaMin11111111";
+const DB_SERVER 	= "production-demo.cas2tln5gone.us-east-1.rds.amazonaws.com";
+const DB_USER 		= "xumlight";
+const DB_PASSWORD 	= "benjaMini1111111";
 const DB_PORT 		= 5732;
 
 class Dashboard {
